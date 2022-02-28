@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --color-1:#272A32;
+    --color-2:#F3F3F3;
+    --color-3:#818181;
+    --color-white:#fff;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: var(--color-2);
+}
+
+.d-center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.d-center-horizontal{
+    display: flex;
+    justify-content: center;
+}
+
+.d-center-vertical{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.title{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: white
+}
+
+.animation-2{
+    animation-delay: 0.7s;
+}
+
+button{
+    cursor: pointer;
+    font-family: 'Hind Siliguri', sans-serif;
+}

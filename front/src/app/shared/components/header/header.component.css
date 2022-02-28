@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    background-color: var(--color-2);
+    min-height: 65px;
+    color:var(--color-1);
+    gap: 3rem;
+    border-bottom: solid 1px #dbdbdb;
+    position: relative;
+}
+
+.header:before{
+    position: absolute;
+    content: "";
+    width: 5%;
+    border-bottom: solid 2px var(--color-2);
+    left: 0;
+    bottom: -1px;
+}
+
+.header:after{
+    position: absolute;
+    content: "";
+    width: 5%;
+    border-bottom: solid 2px var(--color-2);
+    right: 0;
+    bottom: -1px;
+}
+
+.header .list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2.5rem;
+}
+
+.header .title{
+    font-weight: 500;
+}
+
+.header .list li{
+    cursor: pointer;
+    padding: 0 .5rem;
+    font-weight: 500;
+}
+.header a{
+    color: var(--color-1);
+    transition: ease all 150ms;
+    border-bottom: solid 1px transparent
+}
+
+.header a:hover{
+    opacity: .3;
+    /* border-bottom: solid 1px var(--color-1) */
+}

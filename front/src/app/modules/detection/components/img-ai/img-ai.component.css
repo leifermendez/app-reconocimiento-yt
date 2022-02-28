@@ -1,0 +1,102 @@
+:host {
+    min-width: 400px;
+    min-height: 350px;
+    display: block;
+    position: relative;
+    background-color: #282b33;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.label-people{
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: #1624c6;
+    color: var(--color-white);
+    padding: 0 0.5rem;
+    margin: .5rem;
+}
+
+.btn-check {
+    right: 5px;
+    bottom: 10px;
+    background-color: var(--color-white);
+    border: 0;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    width: 100px;
+
+}
+
+.btn-check:active {
+    transform: scale(.8);
+}
+
+.zone-btn {
+    display: flex;
+    gap: .5rem;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Subir imagen';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 0px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+    border-color: black;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.wrapper-image{
+    position: relative;
+    height: 700px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.wrapper-image .loading{
+    position: absolute;
+    background: rgb(255 255 255 / 75%);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+}

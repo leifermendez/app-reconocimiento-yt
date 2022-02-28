@@ -1,0 +1,21 @@
+.step-line{
+    width: 2px;
+    height: 150px;
+    background-color: var(--color-1);
+}
+
+.step{
+    min-width: 300px;
+    min-height: 300px;
+    border:solid 0px var(--color-1);
+    padding: .5rem;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+.wrapper-step{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem 5rem;
+    gap: 2rem;
+}

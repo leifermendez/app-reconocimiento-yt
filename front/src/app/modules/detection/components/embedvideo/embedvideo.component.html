@@ -1,0 +1,4 @@
+<div class="embed" *ngIf="dataVideo$ | async as dataVideo">
+    <h2>Ultimo video</h2>
+    <iframe [style.width]="width" [style.height]="height" [src]="dataVideo.video | checkProvider | sourceSafe"  frameborder="0" allowfullscreen></iframe>
+</div>

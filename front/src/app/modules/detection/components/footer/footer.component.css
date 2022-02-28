@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    margin-left: 10px;
+    color: var(--color-1);
+    font-weight: 600;
+    text-decoration: dashed;
+}

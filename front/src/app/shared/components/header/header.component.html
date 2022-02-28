@@ -1,0 +1,10 @@
+<div class="header d-center-all animate__animated animate__fadeIn">
+    <span class="title"><b>Recognition</b></span>
+    <ul class="list">
+        <li *ngFor="let item of menu">
+            <a [href]="item?.link" target="_blank">
+                {{item?.name}}
+            </a>
+        </li>
+    </ul>
+</div>

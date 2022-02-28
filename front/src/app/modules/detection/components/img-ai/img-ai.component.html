@@ -1,0 +1,13 @@
+<div class="wrapper-image">
+  <div *ngIf="loading$ | async" class="loading">Analizando imagen...</div>
+  <span class="label-people animate__animated animate__bounceIn" *ngIf="labels$ | async">{{labels$ | async}}</span>
+  <img class="image" [src]="blobImage" #image alt="" />
+</div>
+<div class="zone-btn">
+  <input
+    type="file"
+    (change)="getFile($event)"
+    class="btn-check custom-file-input"
+  />
+  <button class="btn-check" (click)="analyze()">Analizar</button>
+</div>

@@ -1,0 +1,10 @@
+<div class="info-image" *ngIf="dataPersonInfo$ | async as dataPerson">
+    <h1>{{dataPerson.name}}</h1>
+    <div>
+        <p>{{dataPerson.description}}</p>
+    </div>
+    <div class="hash-zone">
+        <span *ngFor="let hash of dataPerson.tag">#{{hash}}</span>
+    </div>
+  
+</div>

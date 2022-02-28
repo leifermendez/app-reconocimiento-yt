@@ -1,0 +1,12 @@
+.hash-zone{
+    display: flex;
+    gap: .5rem;
+}
+
+.hash-zone span{
+    color: var(--color-3);
+}
+
+h1{
+    margin: 0;
+}
